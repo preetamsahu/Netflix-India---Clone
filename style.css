@@ -1,0 +1,283 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    /* color: white;                                            */
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("assetes/Images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    background-position: center center;
+    position: relative;
+    z-index: -2;
+   
+}
+.box{
+    width: 100%;
+    height: 90vh;
+    opacity: 0.74;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+
+}
+.navbar{
+    color: white;
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0px 4px;
+    z-index: 1;
+    height: 100px;
+    position: relative;
+    top: 15px   ;
+    
+}
+nav img{
+    width: 112px;
+    position: relative;
+    z-index: 1;
+}
+nav button{
+    color: white;
+    padding: 7px 20px;
+    background: none;
+    border-radius: 6px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+.signin:hover{
+    cursor: pointer;
+}
+.hero{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px);
+    /* position: relative; */
+    gap: 23px;
+    padding: 0px 30px;
+}
+
+.hero span:nth-child(1){
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+.hero span:nth-child(2){
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero span:nth-child(3){
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero span:nth-child(4){
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.herobtns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+#contact1{
+    padding: 13px 131px 9px 17px;
+    font-size: 20px; 
+    background-color: rgba(0, 0, 0, 0.108);
+    border: 1px solid rgb(255 255 255 / 61%);;
+    border-radius: 6px;
+    margin: 0px 6px;
+    color: white;
+    /* position: relative;
+    z-index: 2; */
+}
+#contact2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#contact2{
+    font-size: 23px; 
+    padding: 10px 27px;
+    background-color: red;
+    color: white;
+    font-weight: 550; 
+    border-radius: 6px;
+
+} 
+@media (max-width:508px) {
+    .hero span:nth-child(1){
+        font-size: 38px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .hero span:nth-child(2){
+        font-size: 38px;
+        font-weight: 200;
+        text-align: center;
+    }
+    .hero span:nth-child(3){
+        font-size: 14px;
+        font-weight: 200;
+        text-align: center;
+    }
+    .hero span:nth-child(4){
+        font-size: 10px;
+        font-weight: 200;
+        text-align: center;
+    }
+ 
+}
+@media (max-width:690px) {
+    #contact1{
+        padding: 13px 60px 9px 17px;
+        font-size: 10px; 
+        
+    }
+    #contact2{
+        font-size: 8px; 
+        padding: 10px 10px;
+        
+    
+    }
+
+}
+  
+.seperation{
+    height: 6px;
+    background-color: hwb(309 39% 56% / 0.518);
+}
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    height: 109vh;
+    align-items: center;
+}
+
+.firstwatch{
+    display: flex;
+    flex-direction: column;
+}
+#firstwatch1{
+    font-size: 48px;
+    font-weight: 900;
+}
+#firstwatch2{
+    font-size: 25px;
+    font-weight: 400;
+}
+.secimg{
+    position: relative;
+    display: flex;
+    
+}
+.secimg img{
+    width: 552px;
+    position: relative;
+    /* border: 2px solid green; */
+}
+.secimg video{
+    position: absolute;
+    z-index: -1;
+    top: 26px;
+    right: 80px;
+    width: 434px;
+}
+#thirdimg{
+    width: 469px;
+}
+#thirdvideo{
+    width: 313px;
+}
+@media (max-width:1170px){
+    .first{
+        display: flex;
+        flex-direction: column;      
+    }
+}
+.freq{
+
+    flex-direction: column;
+    color: white;
+
+}
+#freqheading{
+    text-align: center;
+    font-size: 48px;
+    margin: 14px 0px;
+}
+
+#freqimage{
+    filter: invert(100%);
+    width: 2vw;
+    
+}
+.freqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(100, 100, 100, 0.57);
+    width: 80%;
+    margin: 5px auto;
+    padding: 17px 29px;
+    font-size: 24px;
+    transition-property: background-color;
+    transition-duration: 0.51s;
+}
+.freqbox:hover{
+    background-color: rgba(136, 133, 133, 0.773);
+    cursor: pointer;
+}
+
+#footerhero{
+    font-size: 24px;
+    font-weight: 450;
+    margin: 23px;
+    
+}
+.foo{
+    margin: 12px;
+}
+.footcenter{
+    text-align: center;
+    margin: 23px;
+    color: grey;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 60vw;
+    margin: auto;
+    
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer-item a{
+    margin: 12px;
+    color: rgb(154, 154, 154);
+}
+.footer-item a:hover{
+    color: rgb(255, 255, 255);
+}
